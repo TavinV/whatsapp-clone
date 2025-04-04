@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="chat-container">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <header class="sidebar-header">
+                    <div class="user-profile">
+                        <div class="avatar"><i class="fas fa-user"></i></div>
+                        <div class="user-info">
+                            <span class="username">Usuário</span>
+                            <span class="status">Online</span>
+                        </div>
+                    </div>
+                    <div class="sidebar-actions">
+                        <button><i class="fas fa-ellipsis-v"></i></button>
+                    </div>
+                </header>
+
+                <div class="search-bar">
+                    <input type="text" placeholder="Pesquisar ou começar uma nova conversa">
+                </div>
+
+                <div class="chat-list">
+                    <!-- Chats will appear here -->
+                </div>
+            </div>
+
+            <!-- Main Chat Area -->
+            <div class="main-chat">
+                <header class="chat-header">
+                    <div class="chat-info">
+                        <div class="avatar"><img src="img/seloku.png"></div>
+                        <div class="chat-details">
+                            <span class="chat-name">ADS - Senai</span>
+                            <span class="participants">Você e outros participantes</span>
+                        </div>
+                    </div>
+                    <div class="chat-actions">
+                        <button><i class="fas fa-search"></i></button>
+                        <button><i class="fas fa-ellipsis-v"></i></button>
+                    </div>
+                </header>
+
+                <div class="messages-container" id="messages-container">
+                    <!-- Messages will appear here -->
+                    <div class="welcome-message">
+                        <div class="welcome-content">
+                            <h2>Bem-vindo ao WhatsApp Clone</h2>
+                            <p>Digite seu nome e comece a conversar!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message-input-container">
+                    <form id="message-form">
+                        <div class="input-group">
+                            <button type="button" class="emoji-btn"><i class="far fa-smile"></i></button>
+                            <input type="text" id="message-input" placeholder="Digite uma mensagem" autocomplete="off">
+                            <button type="button" class="attach-btn"><i class="fas fa-paperclip"></i></button>
+                        </div>
+                        <button type="submit" class="send-btn"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Username Modal -->
+    <div class="modal" id="username-modal">
+        <div class="modal-content">
+            <h3>Digite seu nome</h3>
+            <input type="text" id="username-input" placeholder="Seu nome de usuário" autocomplete="off">
+            <button id="confirm-username">Confirmar</button>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
