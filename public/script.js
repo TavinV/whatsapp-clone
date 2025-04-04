@@ -6,7 +6,7 @@ if (typeof io === 'undefined') {
 }
 
 // Conexão Socket.IO - agora garantidamente definida
-const socket = io('http://localhost:3000', {
+const socket = io('/', {
     reconnection: true,
     reconnectionAttempts: 5,
     reconnectionDelay: 1000,
