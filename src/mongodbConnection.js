@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const mongoDbURI = `mongodb+srv://otavioviniciusads:whatsappclonepassword@main.uymqohn.mongodb.net/?retryWrites=true&w=majority&appName=main`
+const mongoDbURI = ``
 
 const connect = async() =>{
     try {
