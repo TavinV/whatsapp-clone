@@ -3,6 +3,9 @@ import { createServer } from 'http';
 import { Server } from 'socket.io';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import dotenv from 'dotenv';
+
+dotenv.config()
 
 // Configuração de caminhos
 const __filename = fileURLToPath(import.meta.url);
@@ -56,6 +59,7 @@ io.on('connection', (socket) => {
         };
 
         io.emit('chat message', messageData); // Envia para todos
+
     });
 
     // Evento de desconexão
